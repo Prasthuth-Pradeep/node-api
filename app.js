@@ -2,7 +2,7 @@ import express from "express";
 import user from "./src/routes/user.js"; // User routes
 
 const app = express(); // Express app
-app.use(express.json()); // JSON handling for POST 
+app.use(express.json()); // JSON handling for POST, PUT 
 
 // Use the user for /users path ( http://localhost:3000/user )
 app.use("/user", user);
